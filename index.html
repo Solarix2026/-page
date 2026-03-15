@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品名称</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+        }
+        .hero {
+            background-image: linear-gradient(to bottom right, #7a29ff, #3498db);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-size: 48px;
+            font-weight: 700;
+            text-align: center;
+            padding: 100px 0;
+            animation: fade-in 2s;
+        }
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 0;
+        }
+        .feature {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            width: calc(33.33% - 40px);
+            box-sizing: border-box;
+            animation: slide-in 2s;
+        }
+        @keyframes slide-in {
+            from { transform: translateX(100px); }
+            to { transform: translateX(0); }
+        }
+        .social-proof {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .social-proof img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .cta {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .cta button {
+            background-image: linear-gradient(to bottom right, #7a29ff, #3498db);
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        @media (max-width: 768px) {
+            .feature {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .feature {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        产品名称
+    </div>
+    <div class="features">
+        <div class="feature">
+            <h2>功能1</h2>
+            <p>描述1</p>
+        </div>
+        <div class="feature">
+            <h2>功能2</h2>
+            <p>描述2</p>
+        </div>
+        <div class="feature">
+            <h2>功能3</h2>
+            <p>描述3</p>
+        </div>
+    </div>
+    <div class="social-proof">
+        <img src="https://via.placeholder.com/50" alt="客户1">
+        <img src="https://via.placeholder.com/50" alt="客户2">
+        <img src="https://via.placeholder.com/50" alt="客户3">
+    </div>
+    <div class="cta">
+        <button>联系我们</button>
+        <p>邮箱：<a href="mailto:hello@example.com">hello@example.com</a></p>
+    </div>
+</body>
+</html>
